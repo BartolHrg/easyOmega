@@ -1,0 +1,70 @@
+<greek
+    <lower
+        alpha: α
+        beta: β
+        gamma: γ
+        delta: δ
+        epsilon: ε
+        epsilon1: ε
+        epsilon2: ϵ
+        zeta: ζ
+        eta: η
+        theta: θ
+        theta1: θ
+        theta2: ϑ
+        iota: ι
+        jota: ι
+        kappa: κ
+        lambda: λ
+        mu: μ
+        mi: μ
+        nu: ν
+        ni: ν
+        ksi: ξ
+        omicron: ο
+        pi: π
+        pi2: ϖ
+        rho: ρ
+        rho1: ρ
+        rho2: ϱ
+        sigma: σ
+        sigma1: σ
+        sigma2: ς
+        tau: τ
+        upsilon: υ
+        phi1: ϕ
+        phu2: φ
+        chi: χ
+        psi: ψ
+        omega: ω
+    >
+    <upper
+        Alpha: Α
+        Beta: Β
+        Gamma: Γ
+        Delta: Δ
+        Epsilon: Ε
+        Zeta: Ζ
+        Eta: Η
+        Theta: Θ
+        Iota: Ι
+        Jota: Ι
+        Kappa: Κ
+        Lambda: Λ
+        Mu: Μ
+        Mi: Μ
+        Nu: Ν
+        Ni: Ν
+        Xi: Ξ
+        Omicron: Ο
+        Pi: Π
+        Rho: Ρ
+        Sigma: Σ
+        Tau: Τ
+        Upsilon: Υ
+        Phi: Φ
+        Chi: Χ
+        Psi: Ψ
+        Omega: Ω
+    >
+>
