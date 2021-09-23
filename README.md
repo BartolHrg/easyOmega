@@ -1,0 +1,2 @@
+# easyOmega
+global keyboard mapper
