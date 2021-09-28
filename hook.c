@@ -52,7 +52,7 @@
     static FUNCTION( myHandleMedium OF (DECLARE(nblock AS notifier_block*), DECLARE(action AS unsigned long), DECLARE(data AS keyboard_notifier_param*)) AS int );
     
     notifier_block nb = {
-        .notifier_call = CAST(myHandleMedium AS DECLARE(FUNCTION_POINTER(OF (notifier_block*, unsigned long, void*)) AS int),
+        .notifier_call = CAST(myHandleMedium AS DECLARE(FUNCTION_POINTER(OF (notifier_block*, unsigned long, void*)) AS int)),
     };
     
     static FUNCTION( myHandleMedium OF (
