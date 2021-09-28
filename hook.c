@@ -71,14 +71,14 @@
         return NOTIFY_OK;
     ENDFUNCTION
     
-    static FUNCTION( __init myInit OF () AS int ) 
+    static FUNCTION( __init myInit OF (void) AS int ) 
     STARTFUNCTION
         printk(KERN_INFO "Starting\n");
         register_keyboard_notifier(&nb);
         return 0;
     ENDFUNCTION
     
-    static FUNCTION( __exit myExit OF () AS void ) 
+    static FUNCTION( __exit myExit OF (void) AS void ) 
     STARTFUNCTION
         printk(KERN_INFO "\nEnding\n");
         unregister_keyboard_notifier(&nb);
