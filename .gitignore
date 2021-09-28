@@ -50,6 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-_help/plan.txt
-_help/prezentacija.pdf
-.vscode/settings.json
+_help/*
+.vscode/*
