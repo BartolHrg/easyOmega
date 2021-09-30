@@ -64,7 +64,11 @@
         IF (action == KBD_UNICODE || action == KBD_KEYSYM) && data->down THEN
             Event event = {
                 .value = data->value,
+                .typed_char = data->value,
             };
+            IF action != KBD_UNICODE THEN
+                event.typed_char &= 0xFF;
+            ENDIF
             myHandle(&event);
         ENDIF
         

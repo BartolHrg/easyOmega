@@ -1,8 +1,9 @@
 #include "VB.h"
 
+typedef unsigned int wchar_t;
 
 STRUCT(Event) 
-    // DECLARE(typed_char AS wchar_t);
+    DECLARE(typed_char AS wchar_t);
     DECLARE(value AS unsigned int);
 ENDSTRUCT
 
