@@ -24,6 +24,6 @@
 #include <linux/kernel.h>
 
 FUNCTION( myHandle OF (DECLARE(event AS Event*)) AS void ) {
-    printk(KERN_INFO "typed: # %d # \n", event->value);
+    printk(KERN_INFO "typed: # %u # \n", event->value);
     // printf("typed: -%d- '%c'\n", event.typed_char, event.typed_char);
 }

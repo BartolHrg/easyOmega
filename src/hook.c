@@ -49,13 +49,13 @@
     typedef struct keyboard_notifier_param keyboard_notifier_param;
     
     
-    static FUNCTION( myHandleMedium OF (DECLARE(nblock AS notifier_block*), DECLARE(action AS unsigned long), DECLARE(data AS keyboard_notifier_param*)) AS int );
+    PRIVATE FUNCTION( myHandleMedium OF (DECLARE(nblock AS notifier_block*), DECLARE(action AS unsigned long), DECLARE(data AS keyboard_notifier_param*)) AS int );
     
     notifier_block nb = {
         .notifier_call = CAST(myHandleMedium AS DECLARE(FUNCTION_POINTER(OF (notifier_block*, unsigned long, void*)) AS int)),
     };
     
-    static FUNCTION( myHandleMedium OF (
+    PRIVATE FUNCTION( myHandleMedium OF (
         DECLARE(nblock AS notifier_block*), 
         DECLARE(action AS unsigned long), 
         DECLARE(data AS keyboard_notifier_param*)
@@ -68,17 +68,17 @@
             myHandle(&event);
         ENDIF
         
-        return NOTIFY_OK;
+        RETURN NOTIFY_OK;
     ENDFUNCTION
     
-    static FUNCTION( __init myInit OF (void) AS int ) 
+    PRIVATE FUNCTION( __init myInit OF (void) AS int ) 
     STARTFUNCTION
         printk(KERN_INFO "Starting\n");
         register_keyboard_notifier(&nb);
-        return 0;
+        RETURN 0;
     ENDFUNCTION
     
-    static FUNCTION( __exit myExit OF (void) AS void ) 
+    PRIVATE FUNCTION( __exit myExit OF (void) AS void ) 
     STARTFUNCTION
         printk(KERN_INFO "\nEnding\n");
         unregister_keyboard_notifier(&nb);

@@ -1,5 +1,4 @@
 #include "VB.h"
-// #include <wchar.h>
 
 
 STRUCT(Event) 
@@ -13,11 +12,12 @@ ENDSTRUCT
  * defined in main.c
  * called on every key stroke
  */
-extern FUNCTION( myHandle OF (DECLARE(event AS Event*)) AS void );
+EXTERNAL FUNCTION( myHandle OF (DECLARE(event AS Event*)) AS void );
 
 
 
-/** handleMedium
+/** myHandleMedium
+ * not part of this header
  * transforms event info to `Event` type
  * implementation something like
  *      DECLARE(my_event AS Event);
@@ -25,6 +25,3 @@ extern FUNCTION( myHandle OF (DECLARE(event AS Event*)) AS void );
  *      handle(event);
  */
 
-/** cleanup
- * called at the closing of the application
- */
