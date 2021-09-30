@@ -61,7 +61,7 @@
         DECLARE(data AS keyboard_notifier_param*)
     ) AS int ) 
     STARTFUNCTION
-        IF action == KBD_KEYCODE && data->down THEN
+        IF action == KBD_UNICODE && data->down THEN
             Event event = {
                 .value = data->value,
             };
