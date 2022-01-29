@@ -1,3 +1,5 @@
+#Hotstring EndChars `t
+
 :OC:alpha::α
 :OC:Alpha::Α
 :OC:ALPHA::Α
