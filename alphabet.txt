@@ -33,7 +33,7 @@
         tau: τ
         upsilon: υ
         phi1: ϕ
-        phu2: φ
+        phi2: φ
         chi: χ
         psi: ψ
         omega: ω
