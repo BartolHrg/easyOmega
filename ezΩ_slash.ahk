@@ -83,9 +83,9 @@
 
 ; letters
 	; :OC:/o:ø
-	; :OC:o/:ø
+	:OC:o/::ø
 	; :OC:/O:Ø
-	; :OC:O/:Ø
+	:OC:O/::Ø
 	
 	; diacritics
 		:C:\ae::æ
