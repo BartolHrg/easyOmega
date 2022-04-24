@@ -1,4 +1,4 @@
-#InputLevel, 1
+#InputLevel 1
 
 1::SendEvent, {!}
 $+1::SendEvent, ~
@@ -40,6 +40,7 @@ $+9::SendEvent, ´{Space}
 $0::SendEvent, =
 $+0::SendEvent, ˝{Space}
 
+#InputLevel 0
 
 <^>!SC029::
 MsgBox, 4, , Do you want to exit app 
