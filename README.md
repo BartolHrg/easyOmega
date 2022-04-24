@@ -8,6 +8,11 @@ There are 2 versions: one using \\ as prefix, and other one not.
 To see all of the shortcuts view the source file.  
 or to change some of them edit the source file.  
 
+To exit:  
+- ezΩ: no easy way (no pun intended), use task manager
+- discord_enter: Ctrl+Shift+D
+- number_keys: AltGr+that key left of 1 (maybe)
+
 To use it, you first need [AutoHotKey](https://www.autohotkey.com/)  
 When installing AutoHotKey, select UNICODE option  
 Note in which folder it is installed, you may need it to run ezΩ  
