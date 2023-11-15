@@ -3,6 +3,13 @@ global keyboard mapper
 enables you to write Unicode characters easily with shortcuts  
 λ⁵₃⇒Σ  
 
+## ⚠️ Obsolete  
+
+ezΩ is replaced by [ezΩManager](https://github.com/BartolHrg/hotkeys/tree/main/ez%CE%A9Manager).  
+It will, nevertheless, remain here (without further updates).  
+
+---
+
 There are 2 versions: one using \\ as prefix, and other one not.  
 
 To see all of the shortcuts view the source file.  
